@@ -47,6 +47,6 @@ sensor:
       id: ha_sht4
     update_interval: 60s  
   - platform: dew_point
-    name: Dew Point Example
+    name: ${devicename} Dew Point Example
     temperature: ht_sht4
     humidity: ha_sht4
