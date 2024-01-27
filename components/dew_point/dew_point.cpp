@@ -7,7 +7,7 @@ namespace dew_point {
 static const char *const TAG = "dew_point.sensor";
 
 void DewPointComponent::setup() {
-  ESP_LOGCONFIG(TAG, "Setting up Dew Point '%s'...", this->get_name().c_str());
+  ESP_LOGCONFIG(TAG, "Setting up Dew Point '%s'...", this->get_name().c_str())
 
   ESP_LOGD(TAG, "  Added callback for temperature '%s'", this->temperature_sensor_->get_name().c_str());
   this->temperature_sensor_->add_on_state_callback([this](float state) { this->temperature_callback_(state); });
